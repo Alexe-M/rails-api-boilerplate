@@ -22,31 +22,31 @@ This project is a backend API built with **Ruby on Rails** using **Devise** and 
 ```sh
 $ git clone https://github.com/YOUR_USERNAME/YOUR_BACKEND_REPO.git
 $ cd YOUR_BACKEND_REPO
-2️⃣ Install dependencies
-sh
-Copier
-Modifier
+
+### 2️⃣ Install dependencies
+```sh
 $ bundle install
-3️⃣ Set up the database
-sh
-Copier
-Modifier
+```
+
+### 3️⃣ Set up the database
+```sh
 $ rails db:create db:migrate db:seed
-4️⃣ Run the server
-sh
-Copier
-Modifier
+```
+
+### 4️⃣ Run the server
+```sh
 $ rails s
-🔑 Authentication Endpoints
-➤ User Signup
-http
-Copier
-Modifier
+```
+
+## 🔑 Authentication Endpoints
+
+### ➤ **User Signup**
+#### **Endpoint**
+```http
 POST /users
-Request body:
-json
-Copier
-Modifier
+```
+#### **Request body**
+```json
 {
   "user": {
     "email": "test@example.com",
@@ -54,45 +54,53 @@ Modifier
     "password_confirmation": "password123"
   }
 }
-➤ User Login
-http
-Copier
-Modifier
+```
+
+---
+
+### ➤ **User Login**
+#### **Endpoint**
+```http
 POST /users/sign_in
-Request body:
-json
-Copier
-Modifier
+```
+#### **Request body**
+```json
 {
   "user": {
     "email": "test@example.com",
     "password": "password123"
   }
 }
-Response:
-Returns a JWT token in the Authorization header.
+```
+#### **Response**
+Returns a JWT token in the `Authorization` header.
 
-➤ User Logout
-http
-Copier
-Modifier
+---
+
+### ➤ **User Logout**
+#### **Endpoint**
+```http
 DELETE /users/sign_out
-➤ Password Recovery
-http
-Copier
-Modifier
+```
+
+---
+
+### ➤ **Password Recovery**
+#### **Endpoint**
+```http
 POST /users/password
-Request body:
-json
-Copier
-Modifier
+```
+#### **Request body**
+```json
 {
   "user": {
     "email": "test@example.com"
   }
 }
+```
 
+---
 
-🛠 Further Development
-Add email configuration for password recovery
-Extend user roles & permissions
+## 🛠 Further Development
+- Add email configuration for password recovery
+- Extend user roles & permissions
