@@ -22,6 +22,7 @@ This project is a backend API built with **Ruby on Rails** using **Devise** and 
 ```sh
 $ git clone https://github.com/YOUR_USERNAME/YOUR_BACKEND_REPO.git
 $ cd YOUR_BACKEND_REPO
+```
 
 ### 2️⃣ Install dependencies
 ```sh
